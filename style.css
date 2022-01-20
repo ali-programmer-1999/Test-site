@@ -18,6 +18,14 @@ nav{
     display: flex;
     justify-content: start;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.stiky{
+    background-color: rgba(53, 53, 170, 0.5);
+    padding: 0px 0 21px 10%;
+    box-shadow: 0 0 30px 0;
+    position: sticky;
+    top: 0px;
 }
 .section-1 nav .logo{
     margin-left: 80px;
@@ -119,4 +127,6 @@ nav{
 
 /* finish section */
 
+
+/* start section 3*/
 
