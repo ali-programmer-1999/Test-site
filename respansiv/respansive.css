@@ -1,8 +1,5 @@
 @media screen and (max-width: 574px){
-    .logo{
-      overflow: hidden;
-    }
-    .col-sm{
+     .col-sm{
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -13,6 +10,9 @@
     }
   }
   @media screen and (max-width: 980px){
+    .section-1 nav .logo{
+      display: none;
+    }
     .content-name{
       display: flex;
       flex-wrap: wrap;
