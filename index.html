@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./respansiv/respansive.css">
     <title>Test Site</title>
 </head>
 
@@ -16,11 +17,11 @@
         <nav class="">
             <h1 class="logo">Code<span>Test</span></h1>
             <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="col-sm"><a href="#">Home</a></li>
+                <li class="col-sm"><a href="#">About</a></li>
+                <li class="col-sm"><a href="#">Service</a></li>
+                <li class="col-sm"><a href="#">Teams</a></li>
+                <li class="col-sm"><a href="#">Contact</a></li>
             </ul>
         </nav>
 
@@ -29,36 +30,58 @@
             <div class="name">Ali & Mehdi</div>
             <div class="txt-2">
                 <span>This site write with :</span>
+            </div>
                 <div class="anime">
                     <span>HTML &</span>
                     <span class="css">CSS</span>
                 </div>
-            </div>
+            
         </div>
     </div>
+<!--start section about-->
+    <section id="about">
+        <div class="about container">
+             <div class="section-title">
+                <h2>ABOUT <span> WE</span></h2>
+             </div>
+             <div class="about-content">
+                 <div class="col left">
+                     <img src="/image/about.jpg" class="responsive" alt="">
+                 </div>
+                 <div class="col right">
+                     
+                        <h2  class="text-1">We are <span>Programmer</span></h2>
+                        <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias aut velit  dolorem omnis labore soluta laborum laudantium provident adipisci, modi ex ullam nihil vel veniam qui consequatur aspernatur nulla. Libero?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure qui optio sunt molestiae nihil, dolores unde, sit rem laudantium earum quidem explicabo. Aliquam itaque numquam nam cupiditate, eligendi aliquid distinctio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsam .</p>
+
+                        <a href="#" class="cta">Download CV</a>
+                
+                 </div>
+             </div>
+          
+         </div>
+    </section>
 
     <!--section-3 ----service -->
     <section class="section-3">
         <div class="txt-3">
             <h1 class="service">OUR Service</h1>
-            <h4> <span class="left"></span> What is Provide <span class="right"></span></h4>
         </div>
 
         <div class="list-3">
 
-            <div class="box">
+            <div class="box" id="res">
                 <i class="fas fa-paint-brush"></i>
                 <div class="work">Web Desing</div>
                 <div class="web-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut rem .
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="res">
                 <i class="fas fa-chart-line"></i>
                 <div class="work">Advetising</div>
                 <div class="web-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut rem .
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="res">
                 <i class="fas fa-code"></i>
                 <div class="work">Web Desing</div>
                 <div class="web-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut rem .
@@ -95,7 +118,6 @@
     </section>
 
 
-    <script src="./js/java script.js"></script>
 </body>
 
 </html>

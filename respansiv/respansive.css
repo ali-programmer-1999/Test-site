@@ -1,0 +1,56 @@
+@media screen and (max-width: 574px){
+    .logo{
+      overflow: hidden;
+    }
+    .col-sm{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    a{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 980px){
+    .content-name .txt-1{
+      background-color: rgb(245, 216, 216);
+      border-radius: 25px;
+      text-align: center;
+      margin-right: 20px;
+      padding: 3px 12px;
+    }
+    .content-name .name{
+        background-color: rgb(8, 8, 8);
+        border-radius: 25px;
+        text-align: center;
+        margin-right: 20px;
+        padding: 3px 12px;
+    }
+    .content-name .txt-2 {
+        background-color: rgb(247, 222, 222);
+        border-radius: 25px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .section-1 .content-name .anime{
+        background-color: rgb(2, 2, 2);
+        border-radius: 25px;
+        margin: auto;
+        padding: 0px 40px;
+        white-space: nowrap;
+        animation: typing 4s steps(25);
+        justify-content: center;
+        display: flex;
+        width: 13ch;
+        margin-top: 10px;
+        
+    }
+    @keyframes typing {
+        0% { width: 0ch;} 25% { width: 13ch;} 60% { width: 0ch;} 100% { width: 13ch;}}
+
+    .section-1 .content-name .anime .css{
+        padding-left: 30px;
+    }
+
+    
