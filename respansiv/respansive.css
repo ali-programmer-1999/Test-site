@@ -13,25 +13,33 @@
     }
   }
   @media screen and (max-width: 980px){
+    .content-name{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 90%;
+      padding: 0px 10px;
+      margin: 0 10px;
+    }
     .content-name .txt-1{
       background-color: rgb(245, 216, 216);
+      width: 100%;
       border-radius: 25px;
       text-align: center;
-      margin-right: 20px;
       padding: 3px 12px;
     }
     .content-name .name{
         background-color: rgb(8, 8, 8);
         border-radius: 25px;
+        width: 100%;
         text-align: center;
-        margin-right: 20px;
         padding: 3px 12px;
     }
     .content-name .txt-2 {
         background-color: rgb(247, 222, 222);
+        width: 100%;
         border-radius: 25px;
         text-align: center;
-        margin-right: 20px;
     }
     .section-1 .content-name .anime{
         background-color: rgb(2, 2, 2);
