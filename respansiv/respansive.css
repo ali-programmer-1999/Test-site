@@ -1,5 +1,13 @@
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
 @media screen and (max-width: 574px){
-     .col-sm{
+    .logo{
+      overflow: hidden;
+    }
+    .col-sm{
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -9,45 +17,28 @@
       justify-content: center;
     }
   }
-  @media screen and (max-width: 980px){
-    .section-1 nav .logo{
-      display: none;
-    }
-    .content-name{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 90%;
-      padding: 0px 10px;
-      margin: 0 10px;
-    }
+  @media screen and (max-width: 756px){
     .content-name .txt-1{
-      background-color: rgb(245, 216, 216);
-      width: 100%;
-      border-radius: 25px;
+      margin-right: 8%;
       text-align: center;
-      padding: 3px 12px;
     }
     .content-name .name{
-        background-color: rgb(8, 8, 8);
         border-radius: 25px;
-        width: 100%;
         text-align: center;
+        margin-right: 20px;
         padding: 3px 12px;
     }
     .content-name .txt-2 {
-        background-color: rgb(247, 222, 222);
-        width: 100%;
         border-radius: 25px;
         text-align: center;
+        margin-right: 20px;
     }
     .section-1 .content-name .anime{
-        background-color: rgb(2, 2, 2);
         border-radius: 25px;
         margin: auto;
-        padding: 0px 40px;
+        padding: 0px 10px;
         white-space: nowrap;
-        animation: typing 4s steps(25);
+        animation: typing 4s steps(25) infinite;
         justify-content: center;
         display: flex;
         width: 13ch;
@@ -60,5 +51,219 @@
     .section-1 .content-name .anime .css{
         padding-left: 30px;
     }
-
+    .anime-2{
+      color:rgb(157, 189, 157);
+      white-space: nowrap;
+      width: auto;
+      font-size: 20px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: bolder;
+      margin-top: 10px;
+      border-right: 2px solid rgb(0, 0, 0);
+      animation: typing 6s steps(25) infinite;
+      overflow: hidden;
+    }
+    @keyframes typing {
+    0% { width: 0ch;} 25% { width: 100%;} 60% { width: 0ch;} 100% { width: 100%;}}
+    /* ------------------------- */
+    .container{
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  .responsive{
+      width: 100%;
+      height: auto;
+  }
+  .contact .contact-bottom .left{
+    text-align: center;
+  }
+  .contact .contact-bottom .left p{
+    padding: 0 70px;
+  }
+  .contact .contact-bottom .right h2{
+    text-align: center;
+  }
+  .contact .contact-bottom .right .cta{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact .contact-bottom .right{
+    width: 100%;
+  }
+  .contact .contact-bottom .right .form-1{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+  }
+#contact .top{
+  display: none;
+}
+  @media screen and (max-width: 576px) {
+      #about .about .about-content .col{
+          width: 100%;
+        }
     
+        #about .about-content .left img{
+          width: 50%;
+          height: auto;
+          border-radius: 50%;
+      }
+      #about .about-content .left{
+          width: 100%;
+          height: auto;
+      }
+      #about .about-content .right{
+          margin-top: 20px;
+      }
+      #contact .contact-bottom{
+        display: flex;
+        flex-direction: column;
+      }
+      #contact .contact-bottom .right{
+        width: 100%;
+      }
+      #contact .contact-bottom .left{
+        width: 100%;
+        padding: 0 0;
+      }
+      .section-1 nav {
+        width: 100%;
+        height: 100px;
+      }
+      .section-1 nav .logo{
+        float:  none;
+        width: auto;
+        justify-content: center;
+    }
+     .section-1 nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        background-color: rgba(0,0,0,.8);
+        left: 0;
+        top: 100px;
+        right: 0;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    } 
+    .section-1 nav :checked ~.links{
+        bottom: 0; 
+    }
+    .section-1 nav .icon-burger{
+        display: block;
+    }
+ 
+    .section-1 nav :checked ~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    
+    .section-1 nav :checked ~ .icon-burger .line:nth-child(2){
+        opacity: 0;
+    }
+    
+    .section-1 nav :checked ~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    #contact .top{
+      position: absolute;
+      width: 120px;
+      height: 90px;
+      top:  4215px;
+      right: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+      #about .about .about-content .right{
+        width: 100%;
+        height: auto;
+    }
+      #about .about-content .left img{
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+    }
+    #contact .contact-bottom{
+      display: flex;
+      flex-direction: column;
+    }
+    #contact .contact-bottom .right{
+      width: 100%;
+    }
+    #contact .contact-bottom .left{
+      width: 100%;
+      padding: 0 0;
+    }
+    /* Nav section */
+    .section-1 nav {
+      width: 100%;
+      height: 100px;
+    }
+    .section-1 nav .logo{
+      float:  none;
+      width: auto;
+      justify-content: center;
+  }
+   .section-1 nav .links{
+     float: none;
+     position: fixed;
+     z-index: 9;
+     background-color: rgba(0,0,0,.8);
+      left: 0;
+      top: 100px;
+      right: 0;
+      bottom: 100%;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      overflow: hidden;
+      transition: .3s ease-in-out;
+  } 
+  .section-1 nav :checked ~.links{
+      bottom: 0; 
+  }
+  .section-1 nav .icon-burger{
+      display: block;
+  }
+
+  .section-1 nav :checked ~ .icon-burger .line:nth-child(1){
+      transform: translateY(10px) rotate(225deg);
+  }
+  
+  .section-1 nav :checked ~ .icon-burger .line:nth-child(2){
+      opacity: 0;
+  }
+  
+  .section-1 nav :checked ~ .icon-burger .line:nth-child(3){
+      transform: translateY(-10px) rotate(-225deg);
+  }
+  #contact .top{
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    top:  4215px;
+    right: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+    /* End Nav section */
+
+  }
+}
+  @media screen and (min-width: 992px) {
+   
+  
+  }
+  @media screen and (min-width: 1200px) {
+ 
+         
+  }
+  
