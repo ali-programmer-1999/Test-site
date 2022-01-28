@@ -188,7 +188,14 @@ letter-spacing: normal;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: bolder;
     margin-bottom: 10px;
+    animation: name 3s ease-in;
+    overflow: hidden;
+    white-space: nowrap;
 }
+@keyframes name{
+  0% { width: 0;} 
+  100% { width: 250px;}}
+
 .section-1 .content-name .txt-2{
     color:rgb(255, 255, 255);
     font-size: 32px;
@@ -200,17 +207,18 @@ letter-spacing: normal;
 }
 .section-1 .content-name .anime{
     color: rgb(255, 7, 7);
-    width: 9ch;
+    width: 250px;
     white-space: nowrap;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 45px;
     font-weight: bolder;
     margin-top: 10px;
-    animation: type 4s steps(25) infinite;
+    animation: type 4s ease;
     overflow: hidden;
 }
 @keyframes type{
-0% { width: 0ch;} 25% { width: 9ch;} 60% { width: 0ch;} 100% { width: 9ch;}}
+0% { width: 0;} 
+100% { width: 250px;}}
 
 /* finish section */
 /*start section about*/
