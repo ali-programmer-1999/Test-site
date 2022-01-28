@@ -79,7 +79,7 @@ letter-spacing: normal;
 /* پایان عدم تکرار کد ها */
 
 .section-1{
-    background-image: url("./image/pexels-scott-webb-27406.jpg");
+    background-image: url(../image/home.jpg);
     width: 100%;
     height: 770px;
     background-size: cover;
